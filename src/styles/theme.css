@@ -1,1 +1,11 @@
-:root { --bg:#fff; --fg:#111; --muted:#666; --line:#ddd; }
+:root {
+  --bg: #ffffff;
+  --fg: #0f0f0f;
+  --muted: #4f4f4f;
+  --line: #d9d9d9;
+  --panel: #f7f7f7;
+  --inverse: #111111;
+  --inverse-fg: #ffffff;
+  --focus: #000000;
+  --max: 1180px;
+}
