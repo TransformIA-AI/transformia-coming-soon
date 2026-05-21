@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://transform-ia.com/sitemap.xml
