@@ -111,7 +111,7 @@ export function App() {
       </nav>
 
       <main>
-        <section aria-labelledby="hero-title" className="hero section-grid">
+        <section aria-labelledby="hero-title" className="hero section-grid two-col">
           <p className="status-badge">{STATUS_BADGE}</p>
           <h1 id="hero-title">{copy.heroTitle}</h1>
           <p className="lead">{copy.heroSubtitle}</p>
@@ -120,9 +120,11 @@ export function App() {
             <p className="secondary">{copy.secondary}</p>
           </div>
           <div className="diagram" dir="ltr" aria-label="Governance flow">
-            {copy.diagram.map((step, idx) => (
-              <span key={`${step}-${idx}`} className="node">{step}{idx < copy.diagram.length - 1 ? ' →' : ''}</span>
-            ))}
+            <ol className="diagram-list">
+              {copy.diagram.map((step, idx) => (
+                <li key={`${step}-${idx}`} className="node"><span className="node-num">{String(idx+1).padStart(2,'0')}</span><span>{step}</span></li>
+              ))}
+            </ol>
           </div>
         </section>
 
