@@ -1,0 +1,3 @@
+@import './fonts.css';
+@import './theme.css';
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg)}.page{max-width:1040px;margin:0 auto;padding:1rem}nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}nav img{height:28px}button{border:1px solid var(--line);background:#fff;padding:.35rem .5rem}a{color:var(--fg)}main section{padding:2.5rem 0;border-top:1px solid var(--line)}.badge{font-size:.8rem;letter-spacing:.05em}h1{font-size:clamp(2rem,5vw,3rem)}article{border:1px solid var(--line);padding:1rem;margin:.75rem 0}a:focus-visible,button:focus-visible{outline:2px solid #000;outline-offset:2px}@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto;transition:none !important}}
